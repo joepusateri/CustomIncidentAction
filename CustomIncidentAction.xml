@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2021-05-04 20:38:45">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="PagerDuty Incident Resolution Platform">39a9d9664f834e00dd657bb28110c77b</application>
+<application_name>PagerDuty Incident Resolution Platform</application_name>
+<application_scope>x_pd_integration</application_scope>
+<application_version>7.5.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>CustomIncidentActions</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>a61e0ee32ff3e01029f7ad6df699b6c3</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-05-04 20:38:45</sys_created_on>
+<sys_id>b9ce46272ff3e01029f7ad6df699b6ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-05-04 20:38:45</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="PagerDuty Incident Resolution Platform">39a9d9664f834e00dd657bb28110c77b</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_863bd1172ff7a01029f7ad6df699b69a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;Run Custom Action&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;!gs.nil(current.x_pd_integration_incident)&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;true&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Run Custom Action&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;1048&lt;/order&gt;&lt;script&gt;&lt;![CDATA[var cia = new x_pd_integration.CustomIncidentAction();
+// Change the name of the Custom Incident Action below
+var result = cia.callCIA(current.x_pd_integration_incident, "Custom Action");
+gs.debug("result = "+result);
+if (result != "")
+{
+  gs.addErrorMessage(result);
+}
+action.setRedirectURL(current);
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-03 22:15:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;863bd1172ff7a01029f7ad6df699b69a&lt;/sys_id&gt;&lt;sys_mod_count&gt;37&lt;/sys_mod_count&gt;&lt;sys_name&gt;Run Custom Action&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="PagerDuty Incident Resolution Platform" source="x_pd_integration"&gt;39a9d9664f834e00dd657bb28110c77b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="PagerDuty Incident Resolution Platform"&gt;39a9d9664f834e00dd657bb28110c77b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_863bd1172ff7a01029f7ad6df699b69a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-04 20:37:00&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1006527593</payload_hash>
+<remote_update_set display_value="CustomIncidentActions">b9ce46272ff3e01029f7ad6df699b6ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-05-04 20:38:45</sys_created_on>
+<sys_id>f5ce46272ff3e01029f7ad6df699b6ad</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>179391928c90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-05-04 20:38:45</sys_updated_on>
+<table>incident</table>
+<target_name>Run Custom Action</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>1c6e4ee32ff3e010155387814c016a98</update_guid>
+<update_guid_history>1c6e4ee32ff3e010155387814c016a98:1006527593,9c18caaf9ab3e010f125ecd438d3196c:-1031811901,37d24eab7eb3e010e62e69138623b892:762724678,9e5bb927dbb3e0106e7fd147a4da5d94:-1031811901,0463bdafc073e0107397c475cf21f7b5:1865321025,ea2235af2073e010bbc0650791ba865f:-1534532080,9df131af8a73e010f2da5f260675136d:-1026591794,1fc1fd6f5e73e010a12d5f7c92b41617:-285602189,54c1b96f8373e01080bdd66a35c3f99b:239481951,8471396f1373e010c7d65c1d7f10c008:-1338473731,9c3b261b71bba0100687ebc0e22fabb9:-1414676940,89f0e2536fbba010d0c53941f40d837a:-976241812,1ad0ea132cbba0107042d1528b6192ea:-1359684222,f3c02e1333bba010914e328f51cf723b:1338588317,8f8f161306bba010d94bc210db3393c4:1142390532,fa4f52dfb67ba0108818edb0d5492270:-651683870,8e0f5edfe87ba010275aa93c2489c4c5:-826072637,f7ce9edf6c7ba010f28eb1da5c449379:-1994144490,11ddda9fc57ba0108e40fef2d9fdc3b7:-1653960086,1fad12dfa47ba01072ad294afd2864dd:-2076173107,9d5156d77c7ba010eb70a5d6e40d05ac:-976241812,26111657c07ba0100cd53b0a4fba3edc:107384097,479f4e17097ba010a29623682a81a842:-976241812,4329659f50f7a01020af6f0111b5cd87:107384097,8bf3695b9df7a01022854e20140cb2f3:1977547194,26b3299baaf7a01037b1472eff0d2f6a:-1073891709,4593699b5cf7a010667f53a516a44217:-2056345049,a472a95b16f7a010e626dabdcda42cee:1526404945,e042a15b26f7a01078bbdcda2ffb4791:2004132977,3c5065d730f7a0107b4f7a5212fadc1d:1477062594,46cf1dd761f7a010c6f79908d3603696:-631410270,79fe91d7a1f7a010010508f79ca2a674:-1715405095,16dedd976af7a010540f18cd07983688:-1154073,bb8ed99735f7a010cd64d0c218288d4b:446751272,c73ed91747f7a010163c7e113cce5f80:-1803163641,52ab9517eef7a010d5e8e44e1ba5613e:1648991851,2b4b1d9f0b77a01020d97d2ad562f894:2006742173,0e3bd117a4f7a010450202a93b96ff9b:-901918677</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="PagerDuty Incident Resolution Platform">39a9d9664f834e00dd657bb28110c77b</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_1c4c95172ff7a01029f7ad6df699b641</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_pd_integration.CustomIncidentAction&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;/*** Changes made to this script are not supported by PagerDuty ***/&amp;#13;
+PagerDuty integration methods&lt;/description&gt;&lt;name&gt;CustomIncidentAction&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*** Changes made to this script are not supported by CustomIncidentAction ***/
+var CustomIncidentAction = Class.create();
+CustomIncidentAction.prototype = {
+  initialize: function () {
+    this.JSON = new global.JSON();
+    this._errorMsg = "";
+    this._hasError = false;
+
+    this._autoProvisionUsers = gs.getProperty("x_pd_integration.auto_provision_users");
+    this.assignOnAckOnly = gs.getProperty("x_pd_integration.assign_on_ack_only");
+    this.closeOnUnknownUserGroup = gs.getProperty("x_pd_integration.close_incident_on_unknown");
+    this.defaultUserID = gs.getProperty("x_pd_integration.default_user");
+    this.client = "ServiceNow (PD v7)";
+    this.sn2pdMappingCIAG = "Configuration Items and Assignment Groups map to PagerDuty";
+    this.sn2pdMappingAG = "Assignment Groups map to PagerDuty";
+    this.sn2pdMapping = gs.getProperty("x_pd_integration.sn2pd_mapping");
+    this.defaultServiceID = gs.getProperty("x_pd_integration.default_service");
+    this.triggerIncidentBodyTemplate = gs.getProperty("x_pd_integration.incident_body_template");
+	this.rest = new x_pd_integration.PagerDuty_REST();
+	this.pd = new x_pd_integration.PagerDuty();
+  },
+
+  /*
+   * Retrieves the webhook for a particular Custom Incident Action by name
+   * And also the subdomain of the Incident
+   */
+  getInfoFromIncident: function(incident_id, cia_name) {
+    var me = "getInfoFromIncident";
+	var response = this.rest.getREST("incidents/"+incident_id+"?include%5B%5D=webhooks&amp;include%5B%5D=services", {} , "");
+    var responseBody = response.haveError() ? this._extractPDIncidentError(response) : response.getBody();
+    var status = response.getStatusCode();
+    gs.debug("{0} response: {1}:{2}", me, status, responseBody);
+    if (status === 200) {
+      var body = this.JSON.decode(response.getBody());
+      gs.debug("{0} url {1}", me, body.incident.html_url);
+
+      var regexPdInstanceUrl = /^https:\/\/([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?).pagerduty.com/gi;
+      var subdomain = (regexPdInstanceUrl.exec(body.incident.html_url))[1];
+      gs.debug("{0} subdomain {1}", me, subdomain);
+		
+      var found_webhook_id = "";
+      var webhooks = body.incident.service.webhooks;
+      for (var w in webhooks)
+      {
+          var webhook = webhooks[w];
+          gs.debug("{0}: webhook {1}", me, webhook.outbound_integration.id);
+          if (webhook.outbound_integration.id === "PBIS5NX" &amp;&amp; webhook.name === cia_name) {
+            gs.debug("{0}: got one webhook {1}", me, webhook.id);
+			found_webhook_id = webhook.id;
+        }
+      }
+      gs.debug("{0}: webhook_id {1} subdomain {2}", me, found_webhook_id, subdomain);
+      return {"webhook_id": found_webhook_id, "subdomain": subdomain};
+    }
+  },
+
+  /*
+   * Makes the call to PagerDuty to invoke the Custom Incident Action by webhook id
+   */
+  invokeCIA: function(incident_id, webhook_id, from_email, subdomain) {
+    var me = "invokeCIA";
+	gs.debug("{0} parms {1} {2} {3} {4}", me, incident_id, webhook_id, from_email, subdomain);
+	var body = {
+      "custom_action": {
+        "webhook": {
+            "id": webhook_id,
+            "type": "webhook_reference"
+        }
+      }
+    };
+	var response = this.postDomain(subdomain, "incidents/"+incident_id+"/custom_action", body, from_email);
+      gs.debug("{0}: 00001", me);
+	var responseBody = response.haveError() ? this._extractPDIncidentError(response) : response.getBody();
+      gs.debug("{0}: 00002 {1}", me, responseBody);
+    var status = response.getStatusCode();
+    gs.debug("{0} status {1}", me, status);
+	
+	if (status === 202) {
+      gs.debug("{0}: successful call", me);
+    } else {
+		return {"status": status, "error": responseBody};
+	}
+          
+    return {"status": 0};
+    
+  },
+
+  /*
+   * Main function 
+   */
+  callCIA: function(incident_id, cia_name) {
+	var me = "callCIA";
+	gs.debug("{0} parms {1} {2}", me, incident_id, cia_name);
+	var result = this.getInfoFromIncident(incident_id, cia_name);
+	var webhook_id = result.webhook_id;
+	var subdomain = result.subdomain;
+	gs.debug("{0} webhook_id {1}", me, webhook_id);
+	gs.debug("{0} subdomain {1}", me, subdomain);
+	
+	if (gs.nil(subdomain))
+	{
+		return "Invalid incident ID";
+	} else
+	if (gs.nil(webhook_id))
+	{
+		return "No webhook found for " + cia_name;
+	}
+
+    var currentUserSysid = gs.getUser().getID();
+    var currentUserEmail = this.pd.getValidEmail(currentUserSysid);
+	gs.debug("{0} email {1}", me, currentUserEmail);
+	
+	var resp = this.invokeCIA(incident_id, webhook_id, currentUserEmail, subdomain);
+	gs.debug("{0}: invokeCIA Result {1}", me, resp.status);
+    if (resp.status &gt; 0) {
+      return resp.error;
+	}
+    return "";
+	
+  },
+
+  /*
+   * Makes an HTTPS POST to the Web UI endpoint 
+   * Needed for Custom Incident Action invocations
+   */
+  postDomain: function (subdomain, feature, body, requester, client, clientURL) {
+    var me = "postDomain";
+	gs.debug("{0} parms {1} {2} {3} {4}", me, subdomain, feature, body, requester);
+    try {
+      var bodyJSON = this.JSON.encode(body);
+
+      var restMessage = new sn_ws.RESTMessageV2();
+      restMessage.setHttpMethod("post");
+      this.rest.setBaseHeaders(restMessage);
+
+      // MID server configuration (server, ECC params, HTTP headers)
+      if (this.rest.useMidServer === 'true') {
+        this.rest.configureMIDServer(restMessage);
+      }
+
+      // Custom HTTP headers regardless of MID server settings
+      if (!gs.nil(this.rest.customHeaders)) this.rest.setCustomHeaders(restMessage);
+
+
+      if (!gs.nil(requester)) restMessage.setRequestHeader("From", requester);
+      if (!gs.nil(client) &amp;&amp; !gs.nil(clientURL)) {
+        restMessage.setRequestHeader("X-PagerDuty-Client", "\"" + client + "\" &lt;" + clientURL + "&gt;");
+      }
+
+      baseRestEndpoint = "https://"+subdomain+".pagerduty.com/api/v1";
+      restMessage.setEndpoint(baseRestEndpoint + "/" + feature);
+      restMessage.setRequestBody(bodyJSON);
+
+      gs.debug("postDomain:endpoint: " + restMessage.getEndpoint());
+      gs.debug("postDomain:header requester: " + restMessage.getRequestHeader("From"));
+      gs.debug("postDomain:header X-PagerDuty-Client: " + restMessage.getRequestHeader("X-PagerDuty-Client"));
+      gs.debug("postDomain:body: " + this.rest._removePassword(body));
+
+      //Execute
+      var response = restMessage.execute();
+      var status = response.getStatusCode();
+      gs.debug("postDomain response status:{0}, body:{1}, haveError:{2}, errorMessage:{3}", status, response.getBody(),
+        response.haveError(), response.getErrorMessage());
+
+    } catch (ex) {
+      this._setError("postDomain", ex);
+      gs.error("postDomain error: {0}", ex);
+    } finally {
+      return response;
+    }
+
+  },
+
+  type: 'CustomIncidentAction'
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-03 22:19:31&lt;/sys_created_on&gt;&lt;sys_id&gt;1c4c95172ff7a01029f7ad6df699b641&lt;/sys_id&gt;&lt;sys_mod_count&gt;57&lt;/sys_mod_count&gt;&lt;sys_name&gt;CustomIncidentAction&lt;/sys_name&gt;&lt;sys_package display_value="PagerDuty Incident Resolution Platform" source="x_pd_integration"&gt;39a9d9664f834e00dd657bb28110c77b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="PagerDuty Incident Resolution Platform"&gt;39a9d9664f834e00dd657bb28110c77b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_1c4c95172ff7a01029f7ad6df699b641&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-04 20:37:27&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>120236567</payload_hash>
+<remote_update_set display_value="CustomIncidentActions">b9ce46272ff3e01029f7ad6df699b6ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-05-04 20:38:45</sys_created_on>
+<sys_id>fdce46272ff3e01029f7ad6df699b6ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1793919907d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-05-04 20:38:45</sys_updated_on>
+<table/>
+<target_name>CustomIncidentAction</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>ae7e4ee3d8f3e01027b74559a3baac84</update_guid>
+<update_guid_history>ae7e4ee3d8f3e01027b74559a3baac84:120236567,90b28eab77b3e01043eab892145db3f4:583822091,ea6202abfbb3e0107867789c2f0ac941:1864527851,75e1c6ab2cb3e010bd44c3b2332f67fd:-1396273962,4991066b10b3e01018ed884e1447a599:423161828,e111ce6b7db3e010930176a6852d3f0f:595805643,25a0826bacb3e01057c2d363e7e57c1b:204772915,84df716be8b3e0102490ed7b6e6bdef1:1762988567,40aebde786b3e0109b6212512febf271:1238631337,ca5d71e773b3e010ba54fa0d06c12b65:-2073926360,61dcf9a752b3e010521c6656712d4ad0:-1715523048,2e9cb5a7e5b3e0109d67b6643bf01140:402524795,90fb75a787b3e0100bc1a5584c50d958:510607933,1b3bb96770b3e0107da552a23f934068:2142872431,9b4175abc373e010a77eab7a64e7f35c:754423304,db01b92bcf73e01002b9903889fc454f:1600531193,e001f12f9473e010aa23f84234f7ed6f:25155778,e35bea1b4dbba0100a9d629528ad70cd:1408785104,7d6966d70dbba0102d574fd04391f9e6:-1612804921,6086ae1740bba010cbbe05a0925158ec:1577882866,3926625768bba010c87dca84cc75a044:901383421,7da52e1725bba010f17908b516fa321b:-1110867983,5f756ed3f7bba010aee41761f54f3b2f:-992378569,23256ed3a7bba0101be2f9872d873a2a:217708292,41b4a6d335bba01093a0887dc894f1e8:1964836813,bb93aa93febba0103c1e5479188fa590:1775246755,2c53e69346bba0101cbc89db21b087f1:197202375,94722e53c7bba010a1ef3f4436b31376:1993188987,10bada1f2d7ba0101cc53994f3889e4c:1424719739,280a5e1f6f7ba01041313a10cafb72d8:1114323363,24d9521f0d7ba010b6b07c224fea1aab:-473603011,5479121f9e7ba010ab61a6e792460cef:-1307292226,8509521f1e7ba010327ea4dc86de2049:886903853,36c85a1b647ba010ab48c03b3b0845f5:136142362,f088dadb2a7ba0105ec02424cdb95d52:-533169679,ff38dadb7f7ba010a63a9da465967f49:794124432,6118529b067ba01068fa74c9388c0ac0:-140572726,eef2161b017ba01050f076e53c95ea26:-457427419,ff82561bfc7ba010c494c6743152cc42:1430334035,ed62121b3b7ba0108be47990ef149a8f:1261442711,79125ed7d87ba010d90ea336387e3035:-1996238933,6fb1dad7af7ba01022040c2dd10e6ad4:-365989006,beef42574c7ba010bf5febe32aa89014:1602481369,fe8f0e17407ba0103fbcd821c573d1bf:1593857581,7309a95f34f7a0108ffa69c712762fb9:-1190201226,88b8e95f02f7a010e13e4934da9d258c:-1729130688,0188695f3cf7a0102bf943a8fbb58940:1238311000,0b28a95f84f7a0107eabfa93a27a99bc:323372533,8808295f99f7a010c0fc59e9aa90a3ca:-730498261,c0f6ad1f54f7a01014bc7a15e6f178be:275879268,47b62d1ff7f7a010aea3c8997a358f35:1909472046,4096611fe0f7a01010596aba5de3dbbc:420931869,60b5611fabf7a01039d0e20e6a043979:-1646929912,843521db4df7a010fb60dc60d9ec374b:-969508137,dcf36d5b09f7a010ba91be81e982372b:-641981068,b253a59bbaf7a0105c21c4015f95bcb4:529700580,a27cd1579af7a010cb6876c4d0471c1a:960135516,1c4c1157baf7a0108cb595285ebc57aa:1176784101</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
